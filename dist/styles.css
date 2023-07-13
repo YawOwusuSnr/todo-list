@@ -42,7 +42,8 @@ li {
     width: 100px;
     height: 30px;
     padding: 20px;
-    background-color: #83b59b; 
+    background-color: #9ebdad; 
+    border-radius: 5px;
 }
 
 .items {
@@ -50,4 +51,79 @@ li {
     flex-direction: column;
     gap: 10px;
     padding: 40px;
+}
+
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+    
+    
+.popup .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    height: 50vh;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+    
+    
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+}
+    
+    
+#wrapper {
+    border: 1px solid #888;
+    display: inline-block;
+    padding: 20px;
+}
+    
+    
+.popup.active .overlay {
+    display: block;
+}
+    
+    
+.popup.active .content {
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+    
+    
+button {
+    padding: 20px 50px;
+    background-color: #ab79d6;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgb(255, 255, 255)
 }

@@ -6,5 +6,4 @@ const Task = (title, description, dueDate, priority) => {
 
     return {getDescription, getDue, getPriority, getTitle}
 }
-
 export default Task

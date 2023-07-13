@@ -12,12 +12,84 @@
 <body>
     
     <header id="header">
-        <ul id="nav">
-            <li>Important</li>
-            <li>Completed</li>
+        <ul id="new_project">
+            <li><button id="new_project">New Project</button></li>
         </ul>
+        <ul id="nav">
+            <li><button>All Tasks</button></li>
+        </ul>
+        
     </header>
     <div id="content"></div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" id="close">&times</div>
+        <h1>Add Task</h1>
+        <form class="hform" id="add_a_book">
+        <div class="name section">
+        <label for="bookName">Task : </label>
+        <input
+        type="text"
+        name="bookName"
+        value=""
+        id="bookName"
+        required
+        />
+        </div>
+        <div class="author section">
+        <label for="description">Description : </label>
+        <input type="text" name="description" value="" id="description" required />
+        </div>
+        <div class="page-no section">
+        <label for="due">Due : </label>
+        <input type="text" id="due" name="due" required />
+        </div>
+
+        
+        <input
+        type="button"
+        value="Add Task"
+        class="button section"
+        id="add_book"
+        />
+        </form>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" id="close">&times</div>
+        <h1>Create Project</h1>
+        <form class="hform" id="add_a_project">
+        <div class="name section">
+        <label for="bookName">Project Name:  </label>
+        <input
+        type="text"
+        name="bookName"
+        value=""
+        id="bookName"
+        required
+        />
+        </div>
+        <div class="author section">
+        <label for="description">Description : </label>
+        <input type="text" name="description" value="" id="description" required />
+        </div>
+
+        
+        <input
+        type="button"
+        value="Add Task"
+        class="button section"
+        id="add_book"
+        />
+        </form>
+        </div>
+    </div>
+        
     
 </body>
 
